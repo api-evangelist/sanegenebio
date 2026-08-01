@@ -1,7 +1,25 @@
 aid: sanegenebio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sanegenebio.png
 name: sanegenebio
-description: sanegenebio is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: SanegeneBio is a clinical-stage biotechnology company developing RNAi (RNA interference)
+  genetic medicines for metabolic, cardiovascular, and complement-mediated autoimmune diseases,
+  including obesity. Its proprietary LEAD (Ligand and Enhancer Assisted Delivery) platform enables
+  receptor-mediated, targeted delivery of siRNA therapeutics to adipocytes, skeletal myocytes, and
+  other tissues beyond the liver. The company operates as a fully integrated global biotech and has
+  raised over $150 million to advance its pipeline. Surfaced as a portfolio company of Qiming and
+  added to the API Evangelist network; it publishes a corporate website (about, technology, pipeline,
+  news, contact) but no public developer, API, or documentation surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/sanegenebio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Biotechnology
+- Genetic Medicine
+- RNAi
+- Therapeutics
+- Metabolic Disease
+- Drug Delivery
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sanegenebio-domain-security.yml
 - type: Website
-  url: https://sanegenebio.com
+  url: https://www.sanegenebio.com
+- type: PrivacyPolicy
+  url: https://www.sanegenebio.com/privacy-policy/
+- type: Blog
+  name: News
+  url: https://www.sanegenebio.com/news/
+- type: Support
+  name: Contact
+  url: https://www.sanegenebio.com/contact/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
